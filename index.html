@@ -79,19 +79,12 @@
      <p>
    <hr>
        <h3 id="Inroduction">Introduction</h3>
-       <p class="ex1">
-     <pre>
-       Sample
-     </pre>
-     <p>
+       <p class="ex1"></p>
+   <pre id="Introduction_InText">Sample introduction content goes here...</pre>
    <hr>
        <h3 id="Analysis and discussion">Analysis and discussion</h3>
-       <p class="ex1">
-     <pre>
-       Sample
-     </pre>
-     <p>
-
+       <p class="ex1"></p>
+<pre id="Analysis_InText">Sample analysis content goes here...</pre>
   <h3 id="References">References</h3>h3>
 
 <p>
@@ -197,7 +190,7 @@
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + ;
+    const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }

@@ -110,11 +110,19 @@
     <button id="colorButton">Click me to change colour</button>button>
 
     <script>
+      //Get a reference tp the button element
       var button = document.getElementByld("colorButton");
+
+      //Function to chnage the button color
       function change Color() {
+        //Generate a random color (haxadecimal)
         var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+
+        //Set the button's background color tp the random color
         button.style.backgroundColor = randomColor;
       }
+
+      // Add a click event listener to the button
       button.addEventListener("click",changeColor);
     </script>
   </body>  
